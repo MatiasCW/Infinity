@@ -1,0 +1,50 @@
+<html>
+<body>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+<link href="\infinity/style/manyCalculators.css" rel="stylesheet" type="text/css"/>
+<div class="center"> 
+<h2>Newton's Second Law Calculator</h2>
+<form name="calc">
+  <p>Force = F  measured in Kg</p>
+  <p>Mass = m measured in kg</p>
+  <p>Acceleration = a measured in m/s² </p>
+  <p> F = ma </p>
+  <label for="m"> m: </label><br>
+  <input type="number" Id="m"><br><br>
+  <label for="a">a:</label><br>
+  <input type="number" Id="a"><br><br>
+  <input type="reset" value="Reset"><br><br>
+  <input type="button" value="Submit" onClick="validateForm()">
+</form> 
+<div class="dropdown">
+  <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+    More
+  </a>
+
+   <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+    <li><a class="dropdown-item" href="Fma.html">Force</a></li>
+    <li><a class="dropdown-item" href="Fma2.html">Mass of an object</a></li>
+    <li><a class="dropdown-item" href="Fma3.html">Acceleration</a></li>
+  </ul>
+</div>
+<br><br>
+<a href="\infinity/index.html" class="btn btn-md btn-info">Back to Menu</a>
+</div>
+<script>
+
+
+ function validateForm() {
+ 
+var m = document.forms ["calc"]["m"].value;
+var a = document.forms ["calc"]["a"].value;
+ 
+let F = m*a;
+alert("F = " + F + "N");
+}
+</script>
+
+</body>
+</html> 

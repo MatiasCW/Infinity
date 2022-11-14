@@ -1,0 +1,13 @@
+body{
+   background: linear-gradient(315deg, #E6BE8A,  #F0E68C, #E6BE8A);
+   height: 96vh;
+}
+
+.center {
+  margin: auto;
+  width: 50%;
+}
+
+.othercalc{
+margin-left: 17vh;
+}

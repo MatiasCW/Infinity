@@ -1,0 +1,46 @@
+<html>
+<body>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+<link href="\infinity/style/manyCalculators.css" rel="stylesheet" type="text/css"/>
+<div class="center"> 
+<h2>Pendulum Calculator</h2>
+<form name="calc">
+  <p>Pendulum length = L measured in m</p>
+  <p>Pendulum period = T measured in s</p>
+  <p> T = 2π√(L/g) </p>
+  <label for="L">L: </label><br>
+  <input type="number" Id="L"><br><br>
+  <input type="reset" value="Reset"><br><br>
+  <input type="button" value="Submit" onClick="validateForm()">
+</form> 
+<div class="dropdown">
+  <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+    More
+  </a>
+
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+    <li><a class="dropdown-item" href="TPendulum.html">Pendulum Period</a></li>
+    <li><a class="dropdown-item" href="LPendulum.html">Pendulum Length</a></li>
+  </ul>
+</div>
+<br><br>
+<a href="\infinity/index.html" class="btn btn-md btn-info">Back to Menu</a>
+</div>
+<script>
+
+
+ function validateForm() {
+ 
+var L = document.forms ["calc"]["L"].value;
+let pi = Math.PI;
+let x = Math.sqrt(L/9.8);
+let T = x*2*pi;
+alert("T = " + T + "s");
+}
+</script>
+
+</body>
+</html> 
